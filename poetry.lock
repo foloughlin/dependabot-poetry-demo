@@ -25,7 +25,7 @@ name = "requests"
 version = "2.5.4.1"
 description = "Python HTTP for Humans."
 category = "main"
-optional = false
+optional = true
 python-versions = "*"
 
 [package.extras]
@@ -39,7 +39,7 @@ reference = "test-pypi"
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.8"
-content-hash = "637c91f441a5d9b4efd788567e0c94f5874f502324309a921d2de903a97f7bae"
+content-hash = "69e40c1ce7d8e012ecb0e104a6a528fb79202573636beaf03758d3eaeaa9b213"
 
 [metadata.files]
 jinja2 = [
