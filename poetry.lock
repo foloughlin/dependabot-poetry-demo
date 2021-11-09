@@ -36,10 +36,21 @@ type = "legacy"
 url = "https://test.pypi.org/simple"
 reference = "test-pypi"
 
+[[package]]
+name = "werkzeug"
+version = "2.0.0"
+description = "The comprehensive WSGI web application library."
+category = "main"
+optional = false
+python-versions = ">=3.6"
+
+[package.extras]
+watchdog = ["watchdog"]
+
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.8"
-content-hash = "69e40c1ce7d8e012ecb0e104a6a528fb79202573636beaf03758d3eaeaa9b213"
+content-hash = "7605ccfb53f9ac69fb2223332360ce2c3b8db2e96b661a85bd51206879797f89"
 
 [metadata.files]
 jinja2 = [
@@ -85,4 +96,8 @@ markupsafe = [
 requests = [
     {file = "requests-2.5.4.1-py2.py3-none-any.whl", hash = "sha256:0a2c98e46121e7507afb0edc89d342641a1fb9e8d56f7d592d4975ee6b685f9a"},
     {file = "requests-2.5.4.1.tar.gz", hash = "sha256:b19df51fa3e52a2bd7fc80a1ac11fb6b2f51a7c0bf31ba9ff6b5d11ea8605ae9"},
+]
+werkzeug = [
+    {file = "Werkzeug-2.0.0-py3-none-any.whl", hash = "sha256:64c02f6495ba01eddd6625b3675f357cd358a73f1e38458a56ad86c5baa30b53"},
+    {file = "Werkzeug-2.0.0.tar.gz", hash = "sha256:3389bbfe6d40c6dd25e6d3f974155163c8b3de5bbda6a89342d4ab93fae80ba0"},
 ]

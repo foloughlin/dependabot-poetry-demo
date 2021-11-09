@@ -8,6 +8,7 @@ authors = ["Maxim Koltsov <kolmax94@gmail.com>"]
 python = "^3.8"
 Jinja2 = "^3.0.2"
 requests = {version = "^2.5.4.1", source = "test-pypi", optional = true }
+Werkzeug = "^2.0.0"
 
 [tool.poetry.dev-dependencies]
 
