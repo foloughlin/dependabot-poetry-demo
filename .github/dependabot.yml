@@ -4,6 +4,14 @@ updates:
     directory: "/"
     schedule:
       interval: "weekly"
+    registries:
+      - biocad-gitlab
 
     # https://docs.github.com/en/code-security/supply-chain-security/keeping-your-dependencies-updated-automatically/configuration-options-for-dependency-updates#insecure-external-code-execution
     insecure-external-code-execution: allow
+registries:
+  biocad-gitlab: # Define access for a private registry
+    type: python-index
+    url: https://gitlab.math.bio/api/v4/groups/biocad/-/packages/pypi/simple
+    username: __token__
+    password: ${{secrets.PYPI_PASSWORD}}
