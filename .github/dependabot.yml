@@ -13,5 +13,5 @@ registries:
   biocad-gitlab: # Define access for a private registry
     type: python-index
     url: https://gitlab.math.bio/api/v4/groups/biocad/-/packages/pypi/simple
-    username: __token__
-    password: ${{secrets.PYPI_PASSWORD}}
+    username: ${{secrets.GITLAB_REGISTRY_USERNAME}}
+    password: ${{secrets.GITLAB_REGISTRY_PASSWORD}}
